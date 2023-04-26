@@ -6,6 +6,9 @@ services:
       - 8000:8000
     volumes:
       - ./:/app
+    stdin_open: true  # to use a debugger
+    tty: true  # to use a debugger
+
 
   mysqldb:
     image: mysql
